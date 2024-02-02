@@ -47,7 +47,7 @@ COPY src/MCPServer/osdeps /src/src/MCPServer/osdeps
 COPY src/MCPClient/osdeps /src/src/MCPClient/osdeps
 RUN set -ex \
 	&& curl -s https://packages.archivematica.org/GPG-KEY-archivematica | apt-key add - \
-	&& add-apt-repository --no-update --yes "deb [arch=amd64] http://packages.archivematica.org/1.15.x/ubuntu-externals jammy main" \
+	&& add-apt-repository --no-update --yes "deb [arch=amd64] http://packages.archivematica.org/1.16.x/ubuntu-externals jammy main" \
 	&& add-apt-repository --no-update --yes "deb http://archive.ubuntu.com/ubuntu/ jammy multiverse" \
 	&& add-apt-repository --no-update --yes "deb http://archive.ubuntu.com/ubuntu/ jammy-security universe" \
 	&& add-apt-repository --no-update --yes "deb http://archive.ubuntu.com/ubuntu/ jammy-updates multiverse" \
